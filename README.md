@@ -32,12 +32,10 @@ Number of tiles for base and height of your final map
 		"objects":[
 			{
 				"type": "Tile type (full explanation below)",
-				"layer": 0,
-				"probability": 1,
+				"layer": Integer from 0 and up (full explanation below),
+				"probability": probability with which tiles will appear (full explanation below),
 				"tiles": [
-					[
-						[0]
-					]
+					list of tile ids (full explanation below)
 				]
 			},
 			...
@@ -45,7 +43,6 @@ Number of tiles for base and height of your final map
 	}
 
 ### type
-
 The code will create a matrix that will have one of these letters in each cell: l, c, s, w, and then it will replace these values with tiles, like a find and replace. 
 l = land
 c = city (work in progress)
@@ -100,6 +97,44 @@ And finally you can replace the last l (land) and w (water):
 
 ![Replacement result 4](images/result4.png)
 
+### layer
+Integer from 0 and up. Usually 0 is enough for grass and water and 1 for everything else
+
+### probability
+Float from 0 to 1 indicates the probability with which tiles will appear. If 1 it will always appear (useful for the base of layer zero),
+
+### tiles
+array of arrays. If we have a list of elements that occupy a single tile, such as flowers, bushes, etc... we can write something like:
+
+    [
+    	[
+    		[48] //flowers1
+    	],
+    	[
+    		[49] //flowers2
+    	],
+    	[
+    		[51] //bushes1
+    	],
+    	[
+    		[51] //bushes2
+    	],
+    	...
+    ]
+
+If instead we have a 2 tree 2x2 tiles large we write:
+
+    [
+    	[ //tree1
+    		[8,9],
+    		[16,17]
+    	],
+    	[ //tree2
+    		[10,11],
+    		[18,19]
+    	]
+    ]
+				
 ## TODO
 
  - The generation of the roads needs improvement; they are very
