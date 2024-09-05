@@ -76,7 +76,11 @@ In blue it is represented where there is the match between the two matrices, whi
 
 The result will be:
 
-![Replacement result](images/result1.png)
+![Replacement result 1](images/result1.png)
+
+At the end of all the substitutions of the type \*w**l**** and \***lw****the result will be:
+
+![Replacement result 2](images/result2.png)
 
 ## TODO
 
