@@ -64,7 +64,16 @@ characters 1, 2, and 3 will be cell 1, 2, and 3 of the first row
 characters 4, 5, and 6 will be cell 1, 2, and 3 of the second row
 characters 7, 8, and 9 will be cell 1, 2, and 3 of the third row
 we can see it graphically like this:
+
 ![matrix *w**l****](images/awaalaaaa.png)
+
+In blue it is represented where there is the match between the two matrices, while in red, the central one, is where the substitution will be made:
+
+![replace wwwwllwwlllwlllw](images/wwwwllwwlllwlllw_replace.png)
+
+The result will be:
+
+![Replacement result](images/result1.png)
 
 ## TODO
 
