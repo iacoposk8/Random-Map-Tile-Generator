@@ -81,7 +81,10 @@ The result will be:
 At the end of all the substitutions of the type \*w**l**** and \*\*\*lw****
 the result will be:
 
+![Replacement result 2](images/result2.png)
+
 Now the matrix will look like this:
+
 ![Last matrix](images/last_matrix.png)
 
 ## TODO
