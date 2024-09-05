@@ -61,9 +61,11 @@ For example when we want to use a "corner" tile, we have to look for a 9x9 matri
 
 The code will start making various substitutions, for example: \*w**l****
 This 9 character string represents a 3x3 table, so:
-characters 1, 2, and 3 will be cell 1, 2, and 3 of the first row
-characters 4, 5, and 6 will be cell 1, 2, and 3 of the second row
-characters 7, 8, and 9 will be cell 1, 2, and 3 of the third row
+
+ - characters 1, 2, and 3 will be cell 1, 2, and 3 of the first row
+ - characters 4, 5, and 6 will be cell 1, 2, and 3 of the second row
+ - characters 7, 8, and 9 will be cell 1, 2, and 3 of the third row
+
 we can see it graphically like this:
 
 ![matrix *w**l****](images/awaalaaaa.png)
