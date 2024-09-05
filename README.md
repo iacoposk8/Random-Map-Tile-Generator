@@ -87,6 +87,11 @@ Now the matrix will look like this:
 
 ![Last matrix](images/last_matrix.png)
 
+Now to replace the angle we use a search string like this: \*\*\*!w\*l!\*
+Here's what the substitution match will be like:
+
+![replace last matrix](images/last_matrix_replace.png)
+
 ## TODO
 
  - The generation of the roads needs improvement; they are very
