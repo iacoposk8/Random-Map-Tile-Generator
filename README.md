@@ -25,22 +25,35 @@ Which indicates the size in px of the base and height of a single tile and will 
 
 Number of tiles for base and height of your final map
 
-    var settings = [ ... ]
+    var settings = [
+	{
+		"name": "Tileset file name (tsx)",
+		"tilecount": Total number of tiles in the tileset,
+		"objects":[
+			{
+				"type": "Tile type",
+				"layer": 0,
+				"probability": 1,
+				"tiles": [
+					[
+						[0]
+					]
+				]
+			},
+			...
+		]
+	}
 
-This is an array of objects structured like this:
-| Attribute| Value | Type|
-|--|--|--|
-| name | Tileset file name (tsx) | string |
-| tilecount | Total number of tiles in the tileset | number |
-| objects | List of objects describing how to randomize tiles | array |
-
-Structure of the objects attribute
-| Attribute| Value | Type|
-|--|--|--|
-|type|l = land, c = city (work in progress), s = street, w = water. The code will create a matrix that will have one of these letters in each cell: l, c, s, w, and then it will replace these values with tiles, like a find and replace.| string |
-|layer|--|--|
-|probability|--|--|
-|tiles|--|--|
+### type
+l = land
+c = city (work in progress)
+s = street
+w = water. 
+The code will create a matrix that will have one of these letters in each cell: l, c, s, w, and then it will replace these values with tiles, like a find and replace. 
+There are also special characters: 
+\* = any type, 
+! = all types except w and l. 
+For example when we want to use a "corner" tile, we have to look for a 9x9 matrix and we will replace only the center, for example:
 
 ## TODO
 
