@@ -92,6 +92,14 @@ Here's what the substitution match will be like:
 
 ![replace last matrix](images/last_matrix_replace.png)
 
+This will be the result after the substitution:
+
+![Replacement result 3](images/result3.png)
+
+And finally you can replace the last l (land) and w (water):
+
+![Replacement result 4](images/result4.png)
+
 ## TODO
 
  - The generation of the roads needs improvement; they are very
