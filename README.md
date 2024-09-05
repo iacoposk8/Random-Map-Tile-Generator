@@ -31,7 +31,7 @@ Number of tiles for base and height of your final map
 		"tilecount": Total number of tiles in the tileset,
 		"objects":[
 			{
-				"type": "[Tile type](#type)",
+				"type": "Tile type (full explanation below)",
 				"layer": 0,
 				"probability": 1,
 				"tiles": [
@@ -45,15 +45,19 @@ Number of tiles for base and height of your final map
 	}
 
 ### type
+
+The code will create a matrix that will have one of these letters in each cell: l, c, s, w, and then it will replace these values with tiles, like a find and replace. 
 l = land
 c = city (work in progress)
 s = street
 w = water. 
-The code will create a matrix that will have one of these letters in each cell: l, c, s, w, and then it will replace these values with tiles, like a find and replace. 
+
 There are also special characters: 
 \* = any type, 
 ! = all types except w and l. 
-For example when we want to use a "corner" tile, we have to look for a 9x9 matrix and we will replace only the center, for example:
+For example when we want to use a "corner" tile, we have to look for a 9x9 matrix and we will replace only the center, for example, the script generates this matrix:
+
+![matrix wwwwllwwlllwlllw](images/wwwwllwwlllwlllw.png)
 
 ## TODO
 
