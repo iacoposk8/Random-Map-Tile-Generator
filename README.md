@@ -12,6 +12,20 @@ A Node.js application that randomly generates maps for 2D tile-based games using
     node index.js
 The script will generate a tmx file that can be opened with [Tiled](https://www.mapeditor.org)
 
+## Settings
+
+To modify the generated map open the index.js file and you can modify:
+
+    const single_tile = 32;
+
+Which indicates the size in px of the base and height of a single tile and will be strictly linked to the size of the images of your tileset
+
+    const map_size = [150,150];
+
+Number of tiles for base and height of your final map
+
+    var settings = [ ... ]
+
 ## TODO
 
  - The generation of the roads needs improvement; they are very
