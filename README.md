@@ -1,3 +1,4 @@
+
 # Random Map Tile Generator
 A Node.js application that randomly generates maps for 2D tile-based games using an XY grid system.
 
@@ -25,6 +26,21 @@ Which indicates the size in px of the base and height of a single tile and will 
 Number of tiles for base and height of your final map
 
     var settings = [ ... ]
+
+This is an array of objects structured like this:
+| Attribute| Value | Type|
+|--|--|--|
+| name | Tileset file name (tsx) | string |
+| tilecount | Total number of tiles in the tileset | number |
+| objects | List of objects describing how to randomize tiles | array |
+
+Structure of the objects attribute
+| Attribute| Value | Type|
+|--|--|--|
+|type|l = land, c = city (work in progress), s = street, w = water. The code will create a matrix that will have one of these letters in each cell: l, c, s, w, and then it will replace these values with tiles, like a find and replace.| string |
+|layer|--|--|
+|probability|--|--|
+|tiles|--|--|
 
 ## TODO
 
