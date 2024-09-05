@@ -31,7 +31,7 @@ Number of tiles for base and height of your final map
 		"tilecount": Total number of tiles in the tileset,
 		"objects":[
 			{
-				"type": "Tile type",
+				"type": "[Tile type](#type)",
 				"layer": 0,
 				"probability": 1,
 				"tiles": [
